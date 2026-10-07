@@ -1,0 +1,21 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+next-env.d.ts
+.vercel
+*.tsbuildinfo
+
+
+# Design-Referenz (Quelldateien aus Claude Design, nicht Teil der App)
+/design-reference
+
+# Aider Konfiguration & Logs
+.aider/
+.aider.input.history
+.aider.chat.history.md
+.aider.tags.cache.v4/

@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #f4f4f5;
+  color: #1a1a1a;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark Mode base config */
+.dark {
+  color-scheme: dark;
+}
+
+.dark html,
+.dark body {
+  background: #121214 !important;
+  color: #f4f4f5 !important;
+}
+
+/* Global Overrides for Dark Mode */
+.dark .bg-canvas {
+  background-color: #121214 !important;
+}
+
+.dark .bg-white,
+.dark .bg-\[\#fff\],
+.dark .bg-\[\#ffffff\] {
+  background-color: #1e1e24 !important;
+}
+
+/* Upload fields background in dark mode */
+.dark .bg-\[\#FBFBFB\] {
+  background-color: #1a1a1c !important;
+}
+
+/* Progress bar backgrounds and drafts badges */
+.dark .bg-\[\#F1EFEC\] {
+  background-color: #2d2d34 !important;
+}
+
+.dark .text-ink {
+  color: #f4f4f5 !important;
+}
+
+.dark .text-ink-muted {
+  color: #a1a1aa !important;
+}
+
+.dark .text-ink-faint {
+  color: #71717a !important;
+}
+
+/* Global Border Overrides in Dark Mode (making them subtle and dark) */
+.dark .border,
+.dark .border-b,
+.dark .border-t,
+.dark .border-l,
+.dark .border-r,
+.dark .border-hairline,
+.dark .border-line,
+.dark .border-dashed,
+.dark .border-\[\#E2E2E2\],
+.dark .border-\[\#ECECEC\],
+.dark .border-\[\#F2F2F2\],
+.dark .border-\[\#CFE0F6\],
+.dark .border-\[\#C9C9C9\],
+.dark .border-\[\#C9C9C9\],
+.dark .border-black\/5,
+.dark [style*="border-color: #E2E2E2"],
+.dark [style*="border-color: rgb(226, 226, 226)"] {
+  border-color: #2d2d34 !important;
+}
+
+/* Ensure focus states on inputs show the brand highlight in Dark Mode */
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: #ff4a5a !important;
+  outline: none !important;
+}
+
+/* Form Elements background & text */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1e1e24 !important;
+  color: #f4f4f5 !important;
+  border-color: #2d2d34 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #71717a !important;
+}
+
+/* Header & Footers sticky */
+.dark header,
+.dark .bg-white\/90,
+.dark .bg-white\/95 {
+  background-color: rgba(30, 30, 36, 0.9) !important;
+  border-color: #2d2d34 !important;
+}
+
+/* Info, Warn, Success, Danger Boxes */
+.dark .bg-info-bg {
+  background-color: rgba(20, 87, 184, 0.15) !important;
+}
+.dark .text-info {
+  color: #60a5fa !important;
+}
+
+.dark .bg-warn-bg {
+  background-color: rgba(154, 91, 0, 0.15) !important;
+}
+.dark .text-warn,
+.dark .text-\[\#7A4900\] {
+  color: #fbbf24 !important;
+}
+.dark .border-warn-border {
+  border-color: rgba(154, 91, 0, 0.3) !important;
+}
+
+.dark .bg-success-bg,
+.dark .bg-\[\#E4F5EA\] {
+  background-color: rgba(15, 122, 61, 0.15) !important;
+}
+.dark .text-success,
+.dark .text-\[\#0F7A3D\] {
+  color: #4ade80 !important;
+}
+
+.dark .bg-danger-bg,
+.dark .bg-\[\#FBE7E9\] {
+  background-color: rgba(194, 18, 31, 0.15) !important;
+}
+.dark .text-danger,
+.dark .text-\[\#C2121F\] {
+  color: #f87171 !important;
+}
+
+.dark .bg-brand-tint {
+  background-color: rgba(226, 0, 26, 0.15) !important;
+}
+.dark .text-brand {
+  color: #ff4a5a !important;
+}
+.dark .border-brand {
+  border-color: #ff4a5a !important;
+}
+
+/* Interactive elements overrides */
+.dark .hover\:bg-canvas:hover,
+.dark .hover\:bg-brand-tint:hover {
+  background-color: #2d2d34 !important;
+}
+
+.dark button[style*="background: rgb(255, 255, 255)"],
+.dark button[style*="background: #fff"],
+.dark button[style*="background:#fff"],
+.dark div[style*="background: rgb(255, 255, 255)"],
+.dark div[style*="background: #fff"] {
+  background-color: #1e1e24 !important;
+  color: #f4f4f5 !important;
+  border-color: #2d2d34 !important;
+}
+
+.dark button[style*="color: rgb(26, 26, 26)"],
+.dark button[style*="color: #1A1A1A"] {
+  color: #f4f4f5 !important;
+}
+
+.dark [style*="border-color: #E2E2E2"],
+.dark [style*="border-color: rgb(226, 226, 226)"] {
+  border-color: #2d2d34 !important;
+}
+
+/* Skeleton/Decorative Background patterns */
+.dark [style*="repeating-linear-gradient"] {
+  background: repeating-linear-gradient(135deg, #222226 0 14px, #1a1a1c 14px 28px) !important;
+}
